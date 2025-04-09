@@ -1,0 +1,202 @@
+@import url("./global.css");
+body {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crew-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.crew-main > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crew-text-block {
+  width: 488px;
+  height: 406px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 40px;
+}
+.crew-text-block > h4 {
+  color: var(--theme-white);
+  opacity: 50.42%;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.crew-text-block > h3 {
+  color: var(--theme-white);
+  margin: 0;
+  margin-bottom: 27px;
+  width: 614px;
+}
+.crew-text-block > p {
+  width: 420px;
+  height: 128px;
+  letter-spacing: 1.3px;
+  color: var(--theme-light-blue);
+  font-size: 18px;
+  line-height: 32px;
+  font-family: var(--font-theme-barlow-condensed);
+  font-weight: 400;
+  margin: 0;
+}
+
+.crew-navigation {
+  width: 132px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15px;
+}
+.crew-navigation > div {
+  width: 15px;
+  height: 15px;
+  background-color: var(--theme-white);
+  opacity: 17.44%;
+  border-style: none;
+  border-radius: 100px;
+}
+.crew-navigation > div:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 421px) and (max-width: 769px) {
+  body {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+  .crew-main {
+    flex-direction: column;
+  }
+  .crew-main > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .crew-main > div:nth-of-type(1) {
+    height: 35%;
+    justify-content: flex-end;
+  }
+  .crew-main > div:nth-of-type(2) {
+    height: 65%;
+  }
+  .crew-main > div:nth-of-type(2) > img {
+    width: 420px;
+  }
+  .crew-text-block {
+    width: 458px;
+    height: 232px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .crew-text-block > h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .crew-text-block > h3 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  .crew-text-block > p {
+    width: 458px;
+    height: 84px;
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .crew-navigation {
+    width: 88px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+  }
+  .crew-navigation > div {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .crew-main > div:nth-of-type(1) {
+    width: 100%;
+    height: 57%;
+    justify-content: flex-start;
+  }
+  .crew-main > div:nth-of-type(2) {
+    justify-content: flex-end;
+    border-bottom: 2px rgba(151, 151, 151, 0.1) solid;
+    width: 100%;
+    height: 43%;
+  }
+  .crew-main > div:nth-of-type(2) > img {
+    width: 177.12px;
+  }
+  .crew-text-block {
+    width: 327px;
+    height: 212px;
+    margin-bottom: 0px;
+    position: relative;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .crew-text-block > h4 {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+    order: 2;
+  }
+  .crew-text-block > h3 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 16px;
+    order: 3;
+  }
+  .crew-text-block > p {
+    width: 327px;
+    height: 100px;
+    letter-spacing: 0px;
+    font-size: 15px;
+    line-height: 25px;
+    order: 4;
+  }
+  .crew-text-block .crew-navigation {
+    width: 88px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    order: 1;
+    margin-bottom: 32px;
+  }
+  .crew-text-block .crew-navigation > div {
+    width: 10px;
+    height: 10px;
+  }
+}/*# sourceMappingURL=crew.css.map */
